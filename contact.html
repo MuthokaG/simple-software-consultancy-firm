@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us | Software Consultancy Firm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="book_with_us.html">Book with Us</a></li>
+                <li><a href="team_access.html">Team Access</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+        <section class="contact-page">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have a question, need help, or want to discuss a project, feel free to get in touch.</p>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contactForm" action="submit_contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h2>Our Contact Information</h2>
+                <p>Email: contact@softwareconsultancy.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Software Lane, Tech City, 10001</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Software Consultancy Firm. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

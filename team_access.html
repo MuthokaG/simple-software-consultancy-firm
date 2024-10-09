@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Team Access Only</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="book_with_us.html">Book with Us</a></li>
+                <li><a href="team_access.html">Team Access</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="team-login">
+            <h1>Team Access</h1>
+            <p>Only authorized team members can access this page. Please log in below:</p>
+
+            <!-- Updated form to POST data to team_access.php -->
+            <form method="POST" action="team_access.php">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Software Consultancy Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>

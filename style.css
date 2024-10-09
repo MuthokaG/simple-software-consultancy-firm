@@ -1,0 +1,541 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Menu */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Move the last item (Team Access) to the far right */
+nav ul li:last-child {
+    margin-left: auto; /* Push the last item to the right */
+}
+
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+}
+
+.intro h1 {
+    font-size: 36px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.services-overview, .why-choose-us {
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Services Page */
+.services-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.service-box {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+}
+
+.service-box h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+/* About Us Page */
+.about-us-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.about-us-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.mission, .values, .team {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+}
+
+.mission h2, .values h2, .team h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.values ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.values ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.team p {
+    font-size: 16px;
+    color: #666;
+}
+/* Contact Page */
+.contact-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Details Styling */
+.contact-details {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+/* Clients Page */
+.clients-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.clients-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.clients-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Clients Container */
+.clients-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.client-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.client-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.client-box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.client-box p {
+    font-size: 16px;
+    color: #666;
+}
+/* Book with Us Page */
+.book-with-us-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.book-with-us-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.book-with-us-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Booking Form Styling */
+.booking-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.booking-form input, 
+.booking-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form input[type="date"] {
+    font-size: 16px;
+    color: #555;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #e68900;
+}
+
+.booking-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+/* Team Access Page */
+.team-login {
+    background-color: #f9f9f9; /* Light background to match the rest of the site */
+    padding: 20px;
+    max-width: 600px; /* Ensure the form is centered and not too wide */
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the login box */
+    text-align: center; /* Center-align content inside the form */
+}
+
+.team-login h1 {
+    font-size: 36px;
+    color: #333; /* Dark color for headers */
+    margin-bottom: 20px;
+}
+
+.team-login p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.team-login label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.team-login input[type="text"],
+.team-login input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.team-login button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.team-login button:hover {
+    background-color: #e68900;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.manage-database {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage-database h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.manage-database h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.manage-database form {
+    margin-bottom: 20px;
+}
+
+.manage-database label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.manage-database input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.manage-database button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.manage-database button:hover {
+    background-color: #e68900;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

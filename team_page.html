@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Team Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="team_access.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="manage-database">
+            <h1>Manage Client Bookings and Contact Messages</h1>
+
+            <!-- View Section -->
+            <div class="view-section">
+                <h2>View Records</h2>
+                <form method="POST" action="team_page.php">
+                    <button type="submit" name="view_bookings">View Client Bookings</button>
+                    <button type="submit" name="view_messages">View Contact Messages</button>
+                </form>
+            </div>
+
+            <!-- Update Section -->
+<div class="update-section">
+    <h2>Update Records</h2>
+    <form method="POST" action="team_page.php">
+        <label for="booking_id">Booking ID:</label>
+        <input type="text" id="booking_id" name="id" required>
+
+        <label for="client_name">Client Name:</label>
+        <input type="text" id="client_name" name="name" required> 
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="consultation_date" required>
+
+        <label for="email">Email(not necessary):</label>
+        <input type="text" id="email" name="email">
+
+        <button type="submit" name="update_booking">Update Booking</button>
+    </form>
+</div>
+
+            <!-- Delete Section -->
+            <div class="delete-section">
+                <h2>Delete Records</h2>
+                <form method="POST" action="team_page.php">
+                    <label for="delete_id">Record ID:</label>
+                    <input type="text" id="delete_id" name="delete_id" required>
+                    
+                    <button type="submit" name="delete_booking">Delete Booking</button>
+                    <button type="submit" name="delete_message">Delete Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Software Consultancy Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>
